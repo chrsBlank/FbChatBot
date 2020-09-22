@@ -59,7 +59,7 @@ class EchoBot(Client):
         # If you're not the author, echo
         if author_id != self.uid :
 
-            if Checker.sendmes and author_id != Checker.prev_auth and thread_id !='2725849170831156' and thread_id !='2008417709226395' and thread_id !='1838653722924816' and thread_id !='3761350763910072' : 
+            if Checker.sendmes and author_id != Checker.prev_auth: 
                      
              message_object.text = "YOUR REPLY"
              self.send(message_object, thread_id=thread_id, thread_type=thread_type)
